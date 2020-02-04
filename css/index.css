@@ -133,13 +133,33 @@ table {
   padding-top: 3%;
   margin-bottom: 8%;
 }
+@media (max-width:500px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+}
 .nav-bar h1 {
   font-size: 3rem;
   padding-left: 2%;
 }
+@media (max-width:500px) {
+  .nav-bar h1 {
+    margin: 0 auto;
+    padding-top: 2%;
+  }
+}
 .nav-bar .nav-links {
   width: 800px;
   margin-left: 50%;
+}
+@media (max-width:500px) {
+  .nav-bar .nav-links {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 4%;
+    width: 70%;
+    justify-content: space-evenly;
+  }
 }
 .nav-bar .nav-links a {
   justify-content: flex-end;
@@ -147,6 +167,11 @@ table {
   font-size: 1.8rem;
   text-decoration: none;
   color: black;
+}
+@media (max-width:500px) {
+  .nav-bar .nav-links a {
+    font-size: 1.4rem;
+  }
 }
 .nav-bar .nav-links a:hover {
   color: #84CEEB;
@@ -170,9 +195,20 @@ html body header h2 {
   font-size: 2.6rem;
   padding: 1.5%;
 }
+@media (max-width:500px) {
+  html body header h2 {
+    font-size: 1.8rem;
+    padding-bottom: 3%;
+  }
+}
 html body header p {
   font-size: 1.6rem;
   margin-bottom: 3%;
+}
+@media (max-width:500px) {
+  html body header p {
+    font-size: 1.2rem;
+  }
 }
 html body .main-content {
   width: 90%;
@@ -185,70 +221,125 @@ html body .buttons {
   margin: 0 auto;
   padding-bottom: 4%;
 }
-html body .buttons button {
+@media (max-width:500px) {
+  html body .buttons {
+    width: 100%;
+    padding-bottom: 20%;
+  }
+}
+html body button {
   font-size: 1.6rem;
   border-radius: 5px;
   border-color: #5680E9;
 }
-html body .buttons button:hover {
+@media (max-width:500px) {
+  html body button {
+    background-color: white;
+  }
+}
+html body button:hover {
   background-color: #5AB9EA;
   color: white;
 }
-html .employer-content {
+.employer-content {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-bottom: 3%;
 }
-html .employer-content .content {
+@media (max-width:500px) {
+  .employer-content {
+    flex-direction: column;
+  }
+}
+.employer-content .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 10%;
 }
-html .employer-content img {
+.employer-content img {
   width: 30%;
 }
-html .employer-content h3 {
+@media (max-width:500px) {
+  .employer-content img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.employer-content h3 {
   font-size: 2.2rem;
   padding-bottom: 2%;
 }
-html .employer-content p {
+@media (max-width:500px) {
+  .employer-content h3 {
+    margin: 0 auto;
+    padding: 3%;
+  }
+}
+.employer-content p {
   margin-left: 0%;
   font-size: 1.6rem;
 }
-html .jobseeker-content {
+@media (max-width:500px) {
+  .employer-content p {
+    text-align: center;
+  }
+}
+.jobseeker-content {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-html .jobseeker-content .content {
+@media (max-width:500px) {
+  .jobseeker-content {
+    flex-direction: column-reverse;
+  }
+}
+.jobseeker-content .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 7%;
 }
-html .jobseeker-content img {
+.jobseeker-content img {
   width: 30%;
 }
-html .jobseeker-content h3 {
+@media (max-width:500px) {
+  .jobseeker-content img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.jobseeker-content h3 {
   font-size: 2.2rem;
   padding-bottom: 2%;
 }
-html .jobseeker-content p {
+@media (max-width:500px) {
+  .jobseeker-content h3 {
+    margin: 0 auto;
+    padding: 3%;
+  }
+}
+.jobseeker-content p {
   margin-left: 0%;
   font-size: 1.6rem;
 }
-html footer {
+@media (max-width:500px) {
+  .jobseeker-content p {
+    text-align: center;
+  }
+}
+footer {
   font-size: 1.6rem;
   margin: 0 auto;
   text-align: center;
   margin-top: 20%;
 }
-html footer .social {
+footer .social {
   font-size: 2.5rem;
 }
-html footer a {
+footer a {
   text-decoration: none;
   color: black;
 }

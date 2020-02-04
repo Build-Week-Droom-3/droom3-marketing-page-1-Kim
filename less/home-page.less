@@ -1,7 +1,7 @@
 html {
-    // background-color: @gray;
     font-size: 67.5%;
     font:black;
+    
 
     body {
         display:flex;
@@ -10,19 +10,31 @@ html {
         flex-direction: column;
         margin: 0 auto;
 
+
+
         header {
             margin: 0 auto;
             text-align: center;
 
+
             h2 {
             font-size: 2.6rem;
             padding: 1.5%;
+
+            @media @mobile {
+                font-size:1.8rem;
+                padding-bottom: 3%;
+            }
                 
             }
 
             p {
                 font-size: 1.6rem;
                 margin-bottom: 3%;
+
+                @media @mobile {
+                    font-size: 1.2rem;
+                }
             }
     }
         .main-content {
@@ -38,10 +50,22 @@ html {
                 margin: 0 auto;
                 padding-bottom: 4%;
 
+
+                @media @mobile {
+                    width: 100%;
+                    padding-bottom: 20%;
+                }
+
+             }
+
                 button {
                     font-size: 1.6rem;
                     border-radius: 5px;
                     border-color: @darkblue;
+
+                    @media @mobile {
+                        background-color: white;
+                    }
                 }
 
                 button:hover {
@@ -57,6 +81,10 @@ html {
             width: 100%;
             margin-bottom: 3%;
 
+            @media @mobile {
+                flex-direction: column;
+            }
+
 
             .content {
                 display:flex;
@@ -67,16 +95,30 @@ html {
 
             img {
                 width: 30%;
+
+                @media @mobile {
+                    width: 80%;
+                    margin: 0 auto;
+                }
             }
 
             h3 {
                 font-size: 2.2rem;
                 padding-bottom: 2%;
+
+                @media @mobile {
+                    margin: 0 auto;
+                    padding: 3%;
+                }
             }
 
             p {
                 margin-left: 0%;
                 font-size: 1.6rem;
+
+                @media @mobile {
+                    text-align: center;
+                }
             }
 
             
@@ -87,6 +129,10 @@ html {
             flex-direction: row;
             width: 100%;
 
+            @media @mobile {
+                flex-direction: column-reverse;
+            }
+
             .content {
                 display:flex;
                 flex-direction: column;
@@ -96,16 +142,30 @@ html {
 
             img {
                 width: 30%;
+
+                @media @mobile {
+                    width: 80%;
+                    margin: 0 auto;
+                }
             }
 
             h3 {
                 font-size: 2.2rem;
                 padding-bottom: 2%;
+
+                @media @mobile {
+                    margin: 0 auto;
+                    padding: 3%;
+                }
             }
 
             p {
                 margin-left: 0%;
                 font-size: 1.6rem;
+                
+                @media @mobile {
+                    text-align: center;
+                }
             }
         }
 
@@ -124,4 +184,4 @@ html {
                 color: black;
             }
         }
-    }
+
