@@ -126,7 +126,129 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 3%;
+  margin-bottom: 8%;
+}
+.nav-bar h1 {
+  font-size: 3rem;
+  padding-left: 2%;
+}
+.nav-bar .nav-links {
+  width: 800px;
+  margin-left: 50%;
+}
+.nav-bar .nav-links a {
+  justify-content: flex-end;
+  padding: 3%;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+.nav-bar .nav-links a:hover {
+  color: #84CEEB;
+}
 html {
-  background-color: #C1C8E4;
-  opacity: 0.5;
+  font-size: 67.5%;
+  font: black;
+}
+html body {
+  display: flex;
+  font-family: 'Montserrat';
+  width: 80%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+html body header {
+  margin: 0 auto;
+  text-align: center;
+}
+html body header h2 {
+  font-size: 2.6rem;
+  padding: 1.5%;
+}
+html body header p {
+  font-size: 1.6rem;
+  margin-bottom: 3%;
+}
+html body .main-content {
+  width: 90%;
+  margin: 0 auto;
+}
+html body .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 4%;
+}
+html body .buttons button {
+  font-size: 1.6rem;
+  border-radius: 5px;
+  border-color: #5680E9;
+}
+html body .buttons button:hover {
+  background-color: #5AB9EA;
+  color: white;
+}
+html .employer-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 3%;
+}
+html .employer-content .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+html .employer-content img {
+  width: 30%;
+}
+html .employer-content h3 {
+  font-size: 2.2rem;
+  padding-bottom: 2%;
+}
+html .employer-content p {
+  margin-left: 0%;
+  font-size: 1.6rem;
+}
+html .jobseeker-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+html .jobseeker-content .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7%;
+}
+html .jobseeker-content img {
+  width: 30%;
+}
+html .jobseeker-content h3 {
+  font-size: 2.2rem;
+  padding-bottom: 2%;
+}
+html .jobseeker-content p {
+  margin-left: 0%;
+  font-size: 1.6rem;
+}
+html footer {
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20%;
+}
+html footer .social {
+  font-size: 2.5rem;
+}
+html footer a {
+  text-decoration: none;
+  color: black;
 }

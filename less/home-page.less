@@ -1,4 +1,128 @@
 html {
-    background-color: @gray;
-    opacity: 0.5;
-}
+    // background-color: @gray;
+    font-size: 67.5%;
+    font:black;
+
+    body {
+        display:flex;
+        font-family: 'Montserrat';
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+
+        header {
+            margin: 0 auto;
+            text-align: center;
+
+            h2 {
+            font-size: 2.6rem;
+            padding: 1.5%;
+                
+            }
+
+            p {
+                font-size: 1.6rem;
+                margin-bottom: 3%;
+            }
+        }
+
+        .main-content {
+
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .buttons {
+                display:flex;
+                justify-content: space-evenly;
+                width: 30%;
+                margin: 0 auto;
+                padding-bottom: 4%;
+
+                button {
+                    font-size: 1.6rem;
+                    border-radius: 5px;
+                    border-color: @darkblue;
+                }
+
+                button:hover {
+                    background-color: @midblue;
+                    color: white;
+                }
+            }
+        }
+
+        .employer-content {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 3%;
+
+
+            .content {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 10%;
+            }
+
+            img {
+                width: 30%;
+            }
+
+            h3 {
+                font-size: 2.2rem;
+                padding-bottom: 2%;
+            }
+
+            p {
+                margin-left: 0%;
+                font-size: 1.6rem;
+            }
+
+            
+        }
+
+        .jobseeker-content {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            .content {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 7%;
+            }
+
+            img {
+                width: 30%;
+            }
+
+            h3 {
+                font-size: 2.2rem;
+                padding-bottom: 2%;
+            }
+
+            p {
+                margin-left: 0%;
+                font-size: 1.6rem;
+            }
+        }
+
+        footer {
+            font-size: 1.6rem;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 20%;
+
+            .social {
+                font-size: 2.5rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
