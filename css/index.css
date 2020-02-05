@@ -263,6 +263,11 @@ html body button:hover {
   justify-content: center;
   padding-left: 10%;
 }
+@media (max-width:500px) {
+  .employer-content .content {
+    padding: 5%;
+  }
+}
 .employer-content img {
   width: 30%;
 }
@@ -308,6 +313,11 @@ html body button:hover {
   flex-direction: column;
   justify-content: center;
   padding-left: 7%;
+}
+@media (max-width:500px) {
+  .jobseeker-content .content {
+    padding: 5%;
+  }
 }
 .jobseeker-content img {
   width: 30%;
@@ -371,6 +381,11 @@ html body .about-header {
 html body .about-header h1 {
   font-size: 3rem;
 }
+@media (max-width:500px) {
+  html body .about-header h1 {
+    font-size: 2rem;
+  }
+}
 html body .about-header h1 span {
   color: #5680E9;
 }
@@ -379,16 +394,32 @@ html body .team-members {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  html body .team-members {
+    flex-direction: column;
+  }
+}
 html body .team-members .member {
   flex-direction: row;
   margin: 0 auto;
   text-align: center;
   padding: 1%;
 }
+@media (max-width:500px) {
+  html body .team-members .member {
+    margin-bottom: 7%;
+  }
+}
 html body .team-members .member img {
   width: 110%;
   border-radius: 50%;
   padding: 2%;
+}
+@media (max-width:500px) {
+  html body .team-members .member img {
+    width: 50%;
+    padding: 0%;
+  }
 }
 html body .team-members .member h3 {
   font-size: 2rem;
@@ -398,4 +429,10 @@ html body .team-members .member h3 {
 html body .team-members .member p {
   padding-top: 8%;
   margin-left: 7%;
+}
+@media (max-width:500px) {
+  html body .team-members .member p {
+    margin: 0 auto;
+    padding: 3%;
+  }
 }
