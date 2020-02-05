@@ -174,7 +174,7 @@ table {
   }
 }
 .nav-bar .nav-links a:hover {
-  color: #84CEEB;
+  color: #8860D0;
 }
 html {
   font-size: 67.5%;
@@ -230,6 +230,7 @@ html body .buttons {
 html body button {
   font-size: 1.6rem;
   border-radius: 5px;
+  background-color: #84CEEB;
   border-color: #5680E9;
 }
 @media (max-width:500px) {
@@ -245,7 +246,8 @@ html body button:hover {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 3%;
+  margin-bottom: 6%;
+  border: 1px solid grey;
 }
 @media (max-width:500px) {
   .employer-content {
@@ -290,6 +292,7 @@ html body button:hover {
   display: flex;
   flex-direction: row;
   width: 100%;
+  border: 1px solid grey;
 }
 @media (max-width:500px) {
   .jobseeker-content {
@@ -350,19 +353,41 @@ html {
 html body {
   display: flex;
   font-family: 'Montserrat';
-  width: 80%;
+  width: 85%;
   flex-direction: column;
   margin: 0 auto;
 }
-html body h1 {
-  font-size: 2.6rem;
+html body .about-header {
+  margin: 0 auto;
+  border: 1px solid grey;
+  margin-bottom: 8%;
+  padding: 3%;
+}
+html body .about-header h1 {
+  font-size: 3rem;
 }
 html body .team-members {
   display: flex;
-  flex-direction: column;
-  border: 2px solid red;
+  flex-direction: row;
+  justify-content: space-between;
 }
 html body .team-members .member {
-  border: 2px solid green;
   flex-direction: row;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1%;
+}
+html body .team-members .member img {
+  width: 110%;
+  border-radius: 50%;
+  padding: 2%;
+}
+html body .team-members .member h3 {
+  font-size: 2rem;
+  margin: 0 auto;
+  padding-top: 7%;
+}
+html body .team-members .member p {
+  padding-top: 8%;
+  margin-left: 7%;
 }
