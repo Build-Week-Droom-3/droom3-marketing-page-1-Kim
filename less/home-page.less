@@ -4,12 +4,8 @@ html {
     
 
     body {
-        display:flex;
-        font-family: 'Montserrat';
-        width: 80%;
-        flex-direction: column;
-        margin: 0 auto;
 
+     .main-body(flex,'Montserrat', 85%, column, 0 auto);
 
 
         header {
@@ -77,12 +73,9 @@ html {
         }
 
         .employer-content {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
+            .content(flex, row, 100%, 1px solid grey, 10px 10px 5px grey);
+
             margin-bottom: 6%;
-            border: 1px solid grey;
-            box-shadow: 10px 10px 5px grey;
 
             @media @mobile {
                 flex-direction: column;
@@ -128,11 +121,8 @@ html {
         }
 
         .jobseeker-content {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            border: 1px solid grey;
-            box-shadow: 10px 10px 5px grey;
+            
+            .content(flex, row, 100%, 1px solid grey, 10px 10px 5px grey);
 
             @media @mobile {
                 flex-direction: column-reverse;
