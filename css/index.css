@@ -141,6 +141,8 @@ table {
 .nav-bar h1 {
   font-size: 3rem;
   padding-left: 2%;
+  color: #5680E9;
+  font-weight: bold;
 }
 @media (max-width:500px) {
   .nav-bar h1 {
@@ -248,6 +250,7 @@ html body button:hover {
   width: 100%;
   margin-bottom: 6%;
   border: 1px solid grey;
+  box-shadow: 10px 10px 5px grey;
 }
 @media (max-width:500px) {
   .employer-content {
@@ -293,6 +296,7 @@ html body button:hover {
   flex-direction: row;
   width: 100%;
   border: 1px solid grey;
+  box-shadow: 10px 10px 5px grey;
 }
 @media (max-width:500px) {
   .jobseeker-content {
@@ -362,9 +366,13 @@ html body .about-header {
   border: 1px solid grey;
   margin-bottom: 8%;
   padding: 3%;
+  box-shadow: 10px 10px 5px grey;
 }
 html body .about-header h1 {
   font-size: 3rem;
+}
+html body .about-header h1 span {
+  color: #5680E9;
 }
 html body .team-members {
   display: flex;
