@@ -343,3 +343,26 @@ footer a {
   text-decoration: none;
   color: black;
 }
+html {
+  font-size: 67.5%;
+  font: black;
+}
+html body {
+  display: flex;
+  font-family: 'Montserrat';
+  width: 80%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+html body h1 {
+  font-size: 2.6rem;
+}
+html body .team-members {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+html body .team-members .member {
+  border: 2px solid green;
+  flex-direction: row;
+}
